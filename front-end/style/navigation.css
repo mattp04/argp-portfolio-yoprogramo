@@ -13,7 +13,6 @@
   color: var(--mdc-on-background);
 }
 
-
-.navigation-icon--active svg {
+.navigation-icon.active svg{
   color: var(--mdc-secondary);
 }
