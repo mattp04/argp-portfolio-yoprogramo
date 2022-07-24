@@ -16,5 +16,6 @@ h1, h2, h3, h4, h5 {
 
 p {
   font-family: 'Cabin';
-  font-weight: 600;
+  font-weight: normal;
+  color: var(--mdc-on-background);
 }
