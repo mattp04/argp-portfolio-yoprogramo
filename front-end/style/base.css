@@ -20,3 +20,11 @@ p {
   font-weight: normal;
   color: var(--mdc-on-background);
 }
+
+.section-reference {
+  position: absolute;
+  top:-50px;
+  left: 0;
+  height: 20px;
+  width: 100%;
+}
