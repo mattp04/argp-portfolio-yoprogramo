@@ -1,5 +1,25 @@
 @import url("./_theme.css");
 
+.navigation-bar {
+  background-color: var(--mdc-background);
+  z-index: 1030;
+}
+
+@media (min-width: 768px) {
+  .navigation-bar--icon-container {
+    position: sticky;
+    top: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .navigation-bar {
+    position: sticky;
+    right: 0;
+    left: 0;
+    bottom: 0;
+  }
+}
 
 .navigation-icon {
   text-align: center;
