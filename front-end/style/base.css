@@ -1,5 +1,4 @@
 @import url("./_theme.css");
-@import url("./_card.css");
 
 @font-face {
   font-family: 'Cabin';
@@ -27,4 +26,9 @@ p {
   left: 0;
   height: 20px;
   width: 100%;
+}
+
+/* MDB customization */
+.card {
+  background-color: #272727;
 }
