@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="style/mdb.dark.min.css" />
   <link rel="stylesheet" href="style/base.css" />
   <link rel="stylesheet" href="style/navigation.css" />
+  <link rel="stylesheet" href="style/section/profile.css">
 </head>
 
 <body class="d-flex flex-column-reverse flex-md-row">
@@ -48,12 +49,17 @@
 
   <main class="py-5 flex-fill">
     <div class="container">
-      <section id="profile" class="card rounded-8 p-4 mb-10" aria-label="profile">
-        <div id="profile-ref" class="section-reference"></div>
-        <h1>Matias Pavón</h1>
-        <p>Desarrollador web backend que aspira a ser frontend que busca poder hacer realidad las ideas mas creativas y
-          poderosas. Interesado en la comunicacion entre dispositivos a travez de software (uso de sockets)</p>
-        <hr>
+      <section id="profile" class="card rounded-8 mb-10 overflow-hidden" aria-label="profile">
+        <div class="profile-banner">
+          <img src="img/adam-neumann-C2q-06fEsBo-unsplash.jpg" alt="">
+        </div>
+        <div class="profile-body p-4">
+          <div id="profile-ref" class="section-reference"></div>
+          <h1>Matias Pavón</h1>
+          <p>Desarrollador web backend que aspira a ser frontend que busca poder hacer realidad las ideas mas creativas y
+            poderosas. Interesado en la comunicacion entre dispositivos a travez de software (uso de sockets)</p>
+          <hr>
+        </div>
       </section>
 
       <section id="skills" class="card rounded-8 p-4 mb-10" aria-label="profile">
