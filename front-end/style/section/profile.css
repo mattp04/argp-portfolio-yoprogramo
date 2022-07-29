@@ -27,3 +27,23 @@
   width: 100%;
   height: 100%;
 }
+
+.label {
+  display: flex;
+  margin-bottom: 1em;
+}
+
+.label-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 20px;
+  margin-top: 4px;
+}
+
+.label-body .key {
+  margin: 0;
+}
+
+.label-body .value {
+  margin: 0;
+}
