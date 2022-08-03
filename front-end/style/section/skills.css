@@ -1,0 +1,19 @@
+.skill-item {
+  margin: 1.8em;
+}
+
+.skill-item .img-container {
+  width: 80px;
+  height: 80px;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+
+.skill-item .title {
+  font-size: larger;
+  font-weight: bold;
+}
+
+.skill-item .img-container img {
+  object-fit: contain;
+}
