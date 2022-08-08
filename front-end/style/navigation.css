@@ -1,20 +1,16 @@
 @import url("./_theme.css");
 
 .navigation-bar {
+  height: 100vh;
+  position: fixed;
   background-color: var(--mdc-background);
   z-index: 1030;
 }
 
-@media (min-width: 768px) {
-  .navigation-bar--icon-container {
-    position: sticky;
-    top: 0;
-  }
-}
-
-@media (max-width: 768px) {
+@media (max-width: 767.98px) {
   .navigation-bar {
-    position: sticky;
+    height: auto;
+    position: fixed;
     right: 0;
     left: 0;
     bottom: 0;
