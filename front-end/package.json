@@ -12,5 +12,8 @@
   "dependencies": {
     "@material/ripple": "^14.0.0",
     "@material/theme": "^14.0.0"
+  },
+  "devDependencies": {
+    "sass": "^1.54.4"
   }
 }
