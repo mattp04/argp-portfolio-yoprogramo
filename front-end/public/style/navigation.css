@@ -1,9 +1,7 @@
-@import url("./_theme.css");
-
 .navigation-bar {
   height: 100vh;
   position: fixed;
-  background-color: var(--mdc-background);
+  background-color: var(--mdc-theme-background);
   z-index: 1030;
 }
 
@@ -26,9 +24,9 @@
   width: 35px;
   height: 35px;
   margin: 22.5px;
-  color: var(--mdc-on-background);
+  color: var(--mdc-theme-on-surface);
 }
 
 .navigation-icon.active svg{
-  color: var(--mdc-secondary);
+  color: var(--mdc-theme-secondary);
 }

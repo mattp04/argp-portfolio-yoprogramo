@@ -1,3 +1,186 @@
+:root {
+  --mdc-theme-primary: #9cd67e;
+  --mdc-theme-secondary: #53e300;
+  --mdc-theme-background: #1a1c18;
+  --mdc-theme-surface: #252525;
+  --mdc-theme-error: #ffb4ab;
+  --mdc-theme-on-primary: #0f3900;
+  --mdc-theme-on-secondary: #0f3900;
+  --mdc-theme-on-surface: #e3e3dc;
+  --mdc-theme-on-error: #690005;
+  --mdc-theme-text-primary-on-background: white;
+  --mdc-theme-text-secondary-on-background: rgba(255, 255, 255, 0.7);
+  --mdc-theme-text-hint-on-background: rgba(255, 255, 255, 0.5);
+  --mdc-theme-text-disabled-on-background: rgba(255, 255, 255, 0.5);
+  --mdc-theme-text-icon-on-background: rgba(255, 255, 255, 0.5);
+  --mdc-theme-text-primary-on-light: rgba(0, 0, 0, 0.87);
+  --mdc-theme-text-secondary-on-light: rgba(0, 0, 0, 0.54);
+  --mdc-theme-text-hint-on-light: rgba(0, 0, 0, 0.38);
+  --mdc-theme-text-disabled-on-light: rgba(0, 0, 0, 0.38);
+  --mdc-theme-text-icon-on-light: rgba(0, 0, 0, 0.38);
+  --mdc-theme-text-primary-on-dark: white;
+  --mdc-theme-text-secondary-on-dark: rgba(255, 255, 255, 0.7);
+  --mdc-theme-text-hint-on-dark: rgba(255, 255, 255, 0.5);
+  --mdc-theme-text-disabled-on-dark: rgba(255, 255, 255, 0.5);
+  --mdc-theme-text-icon-on-dark: rgba(255, 255, 255, 0.5);
+}
+
+.mdc-theme--primary {
+  color: #9cd67e  !important;
+  /* @alternate */
+  color: var(--mdc-theme-primary, #9cd67e) !important;
+}
+
+.mdc-theme--secondary {
+  color: #53e300  !important;
+  /* @alternate */
+  color: var(--mdc-theme-secondary, #53e300) !important;
+}
+
+.mdc-theme--background {
+  background-color: #1a1c18;
+  /* @alternate */
+  background-color: var(--mdc-theme-background, #1a1c18);
+}
+
+.mdc-theme--surface {
+  background-color: #252525;
+  /* @alternate */
+  background-color: var(--mdc-theme-surface, #252525);
+}
+
+.mdc-theme--error {
+  color: #ffb4ab  !important;
+  /* @alternate */
+  color: var(--mdc-theme-error, #ffb4ab) !important;
+}
+
+.mdc-theme--on-primary {
+  color: #0f3900  !important;
+  /* @alternate */
+  color: var(--mdc-theme-on-primary, #0f3900) !important;
+}
+
+.mdc-theme--on-secondary {
+  color: #0f3900  !important;
+  /* @alternate */
+  color: var(--mdc-theme-on-secondary, #0f3900) !important;
+}
+
+.mdc-theme--on-surface {
+  color: #e3e3dc  !important;
+  /* @alternate */
+  color: var(--mdc-theme-on-surface, #e3e3dc) !important;
+}
+
+.mdc-theme--on-error {
+  color: #690005  !important;
+  /* @alternate */
+  color: var(--mdc-theme-on-error, #690005) !important;
+}
+
+.mdc-theme--text-primary-on-background {
+  color: white  !important;
+  /* @alternate */
+  color: var(--mdc-theme-text-primary-on-background, white) !important;
+}
+
+.mdc-theme--text-secondary-on-background {
+  color: rgba(255, 255, 255, 0.7)  !important;
+  /* @alternate */
+  color: var(--mdc-theme-text-secondary-on-background, rgba(255, 255, 255, 0.7)) !important;
+}
+
+.mdc-theme--text-hint-on-background {
+  color: rgba(255, 255, 255, 0.5)  !important;
+  /* @alternate */
+  color: var(--mdc-theme-text-hint-on-background, rgba(255, 255, 255, 0.5)) !important;
+}
+
+.mdc-theme--text-disabled-on-background {
+  color: rgba(255, 255, 255, 0.5)  !important;
+  /* @alternate */
+  color: var(--mdc-theme-text-disabled-on-background, rgba(255, 255, 255, 0.5)) !important;
+}
+
+.mdc-theme--text-icon-on-background {
+  color: rgba(255, 255, 255, 0.5)  !important;
+  /* @alternate */
+  color: var(--mdc-theme-text-icon-on-background, rgba(255, 255, 255, 0.5)) !important;
+}
+
+.mdc-theme--text-primary-on-light {
+  color: rgba(0, 0, 0, 0.87)  !important;
+  /* @alternate */
+  color: var(--mdc-theme-text-primary-on-light, rgba(0, 0, 0, 0.87)) !important;
+}
+
+.mdc-theme--text-secondary-on-light {
+  color: rgba(0, 0, 0, 0.54)  !important;
+  /* @alternate */
+  color: var(--mdc-theme-text-secondary-on-light, rgba(0, 0, 0, 0.54)) !important;
+}
+
+.mdc-theme--text-hint-on-light {
+  color: rgba(0, 0, 0, 0.38)  !important;
+  /* @alternate */
+  color: var(--mdc-theme-text-hint-on-light, rgba(0, 0, 0, 0.38)) !important;
+}
+
+.mdc-theme--text-disabled-on-light {
+  color: rgba(0, 0, 0, 0.38)  !important;
+  /* @alternate */
+  color: var(--mdc-theme-text-disabled-on-light, rgba(0, 0, 0, 0.38)) !important;
+}
+
+.mdc-theme--text-icon-on-light {
+  color: rgba(0, 0, 0, 0.38)  !important;
+  /* @alternate */
+  color: var(--mdc-theme-text-icon-on-light, rgba(0, 0, 0, 0.38)) !important;
+}
+
+.mdc-theme--text-primary-on-dark {
+  color: white  !important;
+  /* @alternate */
+  color: var(--mdc-theme-text-primary-on-dark, white) !important;
+}
+
+.mdc-theme--text-secondary-on-dark {
+  color: rgba(255, 255, 255, 0.7)  !important;
+  /* @alternate */
+  color: var(--mdc-theme-text-secondary-on-dark, rgba(255, 255, 255, 0.7)) !important;
+}
+
+.mdc-theme--text-hint-on-dark {
+  color: rgba(255, 255, 255, 0.5)  !important;
+  /* @alternate */
+  color: var(--mdc-theme-text-hint-on-dark, rgba(255, 255, 255, 0.5)) !important;
+}
+
+.mdc-theme--text-disabled-on-dark {
+  color: rgba(255, 255, 255, 0.5)  !important;
+  /* @alternate */
+  color: var(--mdc-theme-text-disabled-on-dark, rgba(255, 255, 255, 0.5)) !important;
+}
+
+.mdc-theme--text-icon-on-dark {
+  color: rgba(255, 255, 255, 0.5)  !important;
+  /* @alternate */
+  color: var(--mdc-theme-text-icon-on-dark, rgba(255, 255, 255, 0.5)) !important;
+}
+
+.mdc-theme--primary-bg {
+  background-color: #9cd67e  !important;
+  /* @alternate */
+  background-color: var(--mdc-theme-primary, #9cd67e) !important;
+}
+
+.mdc-theme--secondary-bg {
+  background-color: #53e300  !important;
+  /* @alternate */
+  background-color: var(--mdc-theme-secondary, #53e300) !important;
+}
+
 @keyframes mdc-ripple-fg-radius-in {
   from {
     animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -380,7 +563,7 @@
 
 .mdc-chip {
   border-radius: 16px;
-  background-color: #323430;
+  background-color: #3c3c3b;
   color: rgba(227, 227, 220, 0.87);
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -527,9 +710,9 @@
   stroke: var(--mdc-theme-primary, #9cd67e);
 }
 .mdc-chip-set--choice .mdc-chip--selected {
-  background-color: #1a1c18;
+  background-color: #252525;
   /* @alternate */
-  background-color: var(--mdc-theme-surface, #1a1c18);
+  background-color: var(--mdc-theme-surface, #252525);
 }
 
 .mdc-chip__checkmark-svg {
