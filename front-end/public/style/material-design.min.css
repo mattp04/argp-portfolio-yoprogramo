@@ -2,7 +2,7 @@
   --mdc-theme-primary: #9cd67e;
   --mdc-theme-secondary: #53e300;
   --mdc-theme-background: #1a1c18;
-  --mdc-theme-surface: #1a1c18;
+  --mdc-theme-surface: #252525;
   --mdc-theme-error: #ffb4ab;
   --mdc-theme-on-primary: #0f3900;
   --mdc-theme-on-secondary: #0f3900;
@@ -44,9 +44,9 @@
 }
 
 .mdc-theme--surface {
-  background-color: #1a1c18;
+  background-color: #252525;
   /* @alternate */
-  background-color: var(--mdc-theme-surface, #1a1c18);
+  background-color: var(--mdc-theme-surface, #252525);
 }
 
 .mdc-theme--error {
@@ -563,7 +563,7 @@
 
 .mdc-chip {
   border-radius: 16px;
-  background-color: #323430;
+  background-color: #3c3c3b;
   color: rgba(227, 227, 220, 0.87);
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -710,9 +710,9 @@
   stroke: var(--mdc-theme-primary, #9cd67e);
 }
 .mdc-chip-set--choice .mdc-chip--selected {
-  background-color: #1a1c18;
+  background-color: #252525;
   /* @alternate */
-  background-color: var(--mdc-theme-surface, #1a1c18);
+  background-color: var(--mdc-theme-surface, #252525);
 }
 
 .mdc-chip__checkmark-svg {
