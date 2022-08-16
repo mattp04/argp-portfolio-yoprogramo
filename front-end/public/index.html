@@ -8,6 +8,9 @@
   <title>Profile</title>
   <!-- MDB -->
   <link rel="stylesheet" href="style/mdb.dark.min.css" />
+  <!-- Material Design Components -->
+  <link rel="stylesheet" href="style/material-design.min.css">
+
   <link rel="stylesheet" href="style/base.css" />
   <link rel="stylesheet" href="style/navigation.css" />
   <link rel="stylesheet" href="style/section/profile.css">
@@ -135,6 +138,38 @@
       <section id="skills" class="card rounded-8 p-4 mb-10" aria-label="profile">
         <div id="skills-ref" class="section-reference"></div>
         <h1>Habilidades</h1>
+
+        <div class="mdc-chip-set mdc-chip-set--choice mt-2" role="grid">
+          <div class="mdc-chip mdc-chip--selected" role="row" id="skill-chip-todo">
+            <div class="mdc-chip__ripple"></div>
+            <span role="gridcell">
+              <span class="mdc-chip__primary-action" role="radio" tabindex="0" aria-checked="true"></span>
+              <span class="mdc-chip__text">Todo</span>
+            </span>
+          </div>
+          <div class="mdc-chip" role="row" id="skill-chip-backend">
+            <div class="mdc-chip__ripple"></div>
+            <span role="gridcell">
+              <span class="mdc-chip__primary-action" role="radio" tabindex="0" aria-checked="true"></span>
+              <span class="mdc-chip__text">Frontend</span>
+            </span>
+          </div>
+          <div class="mdc-chip" role="row" id="skill-chip-frontend">
+            <div class="mdc-chip__ripple"></div>
+            <span role="gridcell">
+              <span class="mdc-chip__primary-action" role="radio" tabindex="0" aria-checked="true"></span>
+              <span class="mdc-chip__text">Backend</span>
+            </span>
+          </div>
+          <div class="mdc-chip" role="row" id="skill-chip-extra">
+            <div class="mdc-chip__ripple"></div>
+            <span role="gridcell">
+              <span class="mdc-chip__primary-action" role="radio" tabindex="0" aria-checked="true"></span>
+              <span class="mdc-chip__text">Extras</span>
+            </span>
+          </div>
+        </div>
+
         <div class="skill-container d-flex justify-content-around flex-wrap my-5 mx-sm-5">
           <div class="skill-item">
             <div class="img-container rounded-circle" style="background: #F7DF1E;">
@@ -223,6 +258,19 @@
 
   <script type="text/javascript" src="script/mdb.min.js"></script>
   <script type="text/javascript" src="script/active_section.js"></script>
+  <script src="script/material-components-web.js"></script>
+  <script>
+    const chipset = new mdc.chips.MDCChipSet(document.querySelector('.mdc-chip-set'));
+    console.log(chipset);
+    let lastChip;
+    chipset.listen("MDCChip:interaction", (evt) => {
+      lastChip = chipset.chipsList.find((c) => c.root.id === evt.detail.chipId);
+      if(chipset.selectedChipIds.length == 0) {
+        let firstChip = chipset.chipsList[0];
+        chipset.foundation.select(firstChip.root.id);
+      }
+    })
+  </script>
 </body>
 
 </html>
