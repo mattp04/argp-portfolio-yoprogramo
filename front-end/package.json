@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass:dev": "sass --no-source-map --watch --update --load-path=node_modules scss:public/style",
+    "sass:compile": "sass --no-source-map --style compressed --load-path=node_modules scss:public/style"
   },
   "keywords": [],
   "author": "",
