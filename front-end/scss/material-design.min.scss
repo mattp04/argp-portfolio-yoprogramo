@@ -1,0 +1,13 @@
+@use "@material/theme" with (
+  $background: #1a1c18,
+  $error: #ffb4ab,
+  $primary: #9cd67e,
+  $on-error: #690005,
+  $on-primary: #0f3900,
+  $on-secondary: #0f3900, 
+  $on-surface: #e3e3dc,
+  $secondary: #53e300,
+  $surface: #1a1c18,
+);
+
+@use '@material/ripple/mdc-ripple';
