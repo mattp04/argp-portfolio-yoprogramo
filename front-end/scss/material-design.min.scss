@@ -7,8 +7,9 @@
   $on-secondary: #0f3900, 
   $on-surface: #e3e3dc,
   $secondary: #53e300,
-  $surface: #1a1c18,
+  $surface: #252525,
 );
 
+@use '@material/theme/mdc-theme';
 @use '@material/ripple/mdc-ripple';
 @use '@material/chips/deprecated/mdc-chips';
