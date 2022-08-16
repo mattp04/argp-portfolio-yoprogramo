@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: var(--mdc-background);
+  background-color: var(--mdc-theme-background);
 }
 
 h1, h2, h3, h4, h5 {
@@ -17,7 +17,7 @@ h1, h2, h3, h4, h5 {
 p {
   font-family: 'Cabin';
   font-weight: normal;
-  color: var(--mdc-on-background);
+  color: var(--mdc-theme-text-primary-on-dark);
 }
 
 .section-reference {
@@ -30,7 +30,8 @@ p {
 
 /* MDB customization */
 .card {
-  background-color: #272727;
+  background-color: var(--mdc-theme-surface);
+  color: var(--mdc-theme-on-surface);
 }
 
 
