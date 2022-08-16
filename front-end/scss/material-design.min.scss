@@ -10,5 +10,6 @@
   $surface: #1a1c18,
 );
 
+@use '@material/theme/mdc-theme';
 @use '@material/ripple/mdc-ripple';
 @use '@material/chips/deprecated/mdc-chips';
