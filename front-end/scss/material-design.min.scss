@@ -10,6 +10,10 @@
   $surface: #252525,
 );
 
+@use "@material/typography" with (
+  $font-family: unquote("Cabin, Roboto, sans-serif"),
+);
+
 @use '@material/theme/mdc-theme';
 @use '@material/ripple/mdc-ripple';
 @use '@material/chips/deprecated/mdc-chips';
