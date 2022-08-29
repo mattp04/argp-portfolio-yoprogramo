@@ -1,16 +1,6 @@
+let sections = document.querySelectorAll("section");
+let navIcons = document.querySelectorAll("nav .navigation-icon");
 
-function parseNodeList(nodeList) {
-    let htmlElements = [];
-    nodeList.forEach(element => {
-        htmlElements.push(element);   
-    });
-    return htmlElements;
-}
-
-let main_container = document.querySelector("main");
-let navBar = document.querySelector("nav");
-let sections = parseNodeList(main_container.querySelectorAll("section"));
-let navIcons = parseNodeList(navBar.querySelectorAll(".navigation-icon"));
 
 function setActiveNavIcon(icon_name) {
     // Remove .active class to all icons
@@ -23,13 +13,16 @@ function setActiveNavIcon(icon_name) {
     });
 }
 
-const sectionObserver = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-        if(entry.isIntersecting) {
-            setActiveNavIcon(entry.target.id + "_icon");
+function checkActiveSection() {
+    let current = "";
+    sections.forEach((section) => {
+        const sectionTop = section.offsetTop;
+        if (scrollY >= sectionTop - document.scrollingElement.clientHeight / 2) {
+            current = section.id;
         }
-    })
-}, { threshold: 0.2 });
+    });
+    setActiveNavIcon(current + "_icon");
+}
 
-
-sections.forEach(section => sectionObserver.observe(section));
+checkActiveSection();
+window.addEventListener('scroll', checkActiveSection, { passive: true });
