@@ -20,6 +20,10 @@ p {
   color: var(--mdc-on-background);
 }
 
+section {
+  scroll-margin-top: 5em;
+}
+
 .section-reference {
   position: absolute;
   top:-50px;
