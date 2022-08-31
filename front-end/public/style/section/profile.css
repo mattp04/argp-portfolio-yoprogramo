@@ -1,5 +1,6 @@
 .profile-banner {
   height: 300px;
+  border-radius: 1.25rem 1.25rem 0 0;
 }
 
 .profile-banner img {

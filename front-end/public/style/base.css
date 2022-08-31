@@ -20,12 +20,8 @@ p {
   color: var(--mdc-theme-text-primary-on-dark);
 }
 
-.section-reference {
-  position: absolute;
-  top:-50px;
-  left: 0;
-  height: 20px;
-  width: 100%;
+section {
+  scroll-margin-top: 5em;
 }
 
 /* MDB customization */
