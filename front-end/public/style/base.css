@@ -24,14 +24,6 @@ section {
   scroll-margin-top: 5em;
 }
 
-.section-reference {
-  position: absolute;
-  top:-50px;
-  left: 0;
-  height: 20px;
-  width: 100%;
-}
-
 /* MDB customization */
 .card {
   background-color: #272727;
