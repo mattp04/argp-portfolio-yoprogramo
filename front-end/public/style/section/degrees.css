@@ -1,0 +1,27 @@
+.accordion-button {
+  background-color: var(--mdc-theme-surface);
+  box-shadow: none !important;
+}
+
+.accordion-collapse{
+  position: relative;
+}
+
+.accordion-collapse:not(.show) {
+  display: block;
+  opacity: 0;
+  height: 0px;
+}
+
+.accordion-collapse.collapsing {
+  opacity: 1;
+}
+
+.accordion-item .accordion-button + .accordion-collapse .accordion-body {
+  background-color: #424242;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.accordion-item .accordion-button.collapsed + .accordion-collapse .accordion-body {
+  background-color: var(--mdc-theme-surface);
+}
