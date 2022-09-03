@@ -21,7 +21,16 @@ p {
 }
 
 section {
-  scroll-margin-top: 5em;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+@media (min-height: 1300px) {
+  section {
+    background-color: red;
+    min-height: 1300px;
+  }
 }
 
 /* MDB customization */
