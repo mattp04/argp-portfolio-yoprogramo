@@ -1,7 +1,8 @@
 .navigation-bar {
   height: 100vh;
   position: fixed;
-  background-color: var(--mdc-theme-background);
+  background-color: rgba(26, 28, 24, 0.7);
+  backdrop-filter: blur(5px);
   z-index: 1030;
 }
 
