@@ -21,13 +21,14 @@
   flex-grow: 0;
 }
 
-.navigation-icon svg {
+.navigation-icon .material-icons {
   width: 35px;
   height: 35px;
   margin: 22.5px;
   color: var(--mdc-theme-on-surface);
+  font-size: 36px;
 }
 
-.navigation-icon.active svg{
+.navigation-icon.active .material-icons {
   color: var(--mdc-theme-secondary);
 }
