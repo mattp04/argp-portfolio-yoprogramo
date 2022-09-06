@@ -10,12 +10,15 @@
   <link rel="stylesheet" href="style/mdb.dark.min.css" />
   <!-- Material Design Components -->
   <link rel="stylesheet" href="style/material-design.min.css">
+  <!-- Material Design Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
   <link rel="stylesheet" href="style/base.css" />
   <link rel="stylesheet" href="style/navigation.css" />
   <link rel="stylesheet" href="style/section/profile.css">
   <link rel="stylesheet" href="style/section/skills.css">
   <link rel="stylesheet" href="style/section/degrees.css">
+  <link rel="stylesheet" href="style/section/projects.css">
 </head>
 
 <body class="">
@@ -233,7 +236,7 @@
           <h1 class="mb-3 px-4">Estudios</h1>
           <div class="accordion accordion-flush" id="accordionStudies">
             <div class="accordion-item">
-              <button class="accordion-button mdc-button" type="button" data-mdb-toggle="collapse"
+              <button class="accordion-button" type="button" data-mdb-toggle="collapse"
                 data-mdb-target="#collapseThree">
                 <div class="d-flex flex-wrap align-items-center w-100">
                   <img class="accordion-button__logo rounded-circle me-3 d-none d-sm-block"
@@ -447,30 +450,66 @@
           </div>
         </div>
       </section>
-
-      <section id="projects" class="py-5 mb-10"  aria-label="profile">
-        <div class="card rounded-8 p-4 my-auto">
-
-          <h1>Proyectos</h1>
-          <p>Desarrollador web backend que aspira a ser frontend que busca poder hacer realidad las ideas mas creativas y
-            poderosas. Interesado en la comunicacion entre dispositivos a travez de software (uso de sockets)</p>
-          <hr>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu molestie ipsum. Cras pretium laoreet ipsum,
-            at
-            eleifend ligula ultrices viverra. Ut dictum mollis molestie. Praesent urna nisi, pretium sed velit et, maximus
-            cursus
-            lacus. Curabitur non ante in enim suscipit consectetur. Aliquam sit amet nisi pharetra, vulputate ipsum eget,
-            pretium
-            eros. Cras ornare erat sit amet lacus malesuada, blandit vulputate ex feugiat. Orci varius natoque penatibus
-            et magnis
-            dis parturient montes, nascetur ridiculus mus. Vestibulum turpis mauris, vestibulum eget ex et, rhoncus
-            vestibulum mi.
-            Cras laoreet urna ligula. Quisque id ligula a diam efficitur dapibus. Vestibulum ante ipsum primis in faucibus
-            orci
-            luctus et ultrices posuere cubilia curae; Curabitur ac vehicula dolor, quis tincidunt sapien.</p>
-        </div>
-      </section>
     </div>
+  </main>
+  <main>
+    <section id="projects" class="py-5" aria-label="profile">
+      <div class="container">
+        <div class="p-4 my-auto offset-md-1 offset-lg-2 col-lg-9 col-xl-8">
+          <h1 class="mb-3">Proyectos</h1>
+        </div>
+        <div class="d-flex flex-column my-auto offset-md-1 offset-lg-2 col-lg-9 col-xl-8">
+          <div class="card project-card">
+            <div class="project-card__banner">
+              <img src="taskApp_overview.png" alt="">
+            </div>
+            <div class="project-card__body">
+              <h2>Mi Portafolio</h2>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod, cupiditate tempore in placeat laborum
+                rerum optio. Distinctio, quod, quae cupiditate modi similique omnis at ipsam eius nesciunt dicta minus
+                sequi!</p>
+            </div>
+            <div class="project-card__button-container">
+              <button class="mdc-button mdc-button--touch">
+                <span class="mdc-button__ripple"></span>
+                <span class="mdc-button__touch"></span>
+                <span class="mdc-button__label">Mas info</span>
+              </button>
+              <a class="mdc-button mdc-button--touch" href="https://github.com/mattp04/argp-portfolio-yoprogramo" target="_blank">
+                <span class="mdc-button__ripple"></span>
+                <span class="mdc-button__touch"></span>
+                <span class="mdc-button__label mdc-theme--primary">Codigo fuente</span>
+                <i class="material-icons mdc-button__icon text-light" aria-hidden="true">open_in_new</i>
+              </a>
+            </div>
+          </div>
+          <div class="card project-card">
+            <div class="project-card__banner">
+              <img src="taskApp_overview.png" alt="">
+            </div>
+            <div class="project-card__body">
+              <h2>Lista de tareas</h2>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod, cupiditate tempore in placeat laborum
+                rerum optio. Distinctio, quod, quae cupiditate modi similique omnis at ipsam eius nesciunt dicta minus
+                sequi!</p>
+            </div>
+            <div class="project-card__button-container">
+              <button class="mdc-button mdc-button--touch">
+                <span class="mdc-button__ripple"></span>
+                <span class="mdc-button__touch"></span>
+                <span class="mdc-button__label">Mas info</span>
+              </button>
+              <a class="mdc-button mdc-button--touch mdc" href="https://www.github.com" target="_blank">
+                <span class="mdc-button__ripple"></span>
+                <span class="mdc-button__touch"></span>
+                <span class="mdc-button__label mdc-theme--primary">Codigo fuente</span>
+                <i class="material-icons mdc-button__icon text-light" aria-hidden="true">open_in_new</i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
   <script type="text/javascript" src="script/mdb.min.js"></script>
