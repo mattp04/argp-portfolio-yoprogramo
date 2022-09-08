@@ -6,16 +6,6 @@
   z-index: 1030;
 }
 
-@media (max-width: 767.98px) {
-  .navigation-bar {
-    height: auto;
-    position: fixed;
-    right: 0;
-    left: 0;
-    bottom: 0;
-  }
-}
-
 .navigation-icon {
   text-align: center;
   flex-grow: 0;
@@ -32,3 +22,18 @@
 .navigation-icon.active .material-icons {
   color: var(--mdc-theme-secondary);
 }
+
+@media (max-width: 767.98px) {
+  .navigation-bar {
+    height: auto;
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+  }
+
+  .navigation-icon .material-icons {
+    margin: 22.5px auto;
+  }
+}
+
