@@ -1,6 +1,9 @@
 #projects {
   background-color: #386667;
   scroll-margin-top: 0;
+  background-image: url("../../img/david-van-dijk-3LTht2nxd34-unsplash.jpg");
+  background-attachment: fixed;
+  background-position-x: 50%;
 }
 
 .project-card {
