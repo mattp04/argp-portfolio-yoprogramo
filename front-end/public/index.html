@@ -40,7 +40,7 @@
         data-mdb-container=".navigation-bar" aria-label="projects">
         <span class="material-icons">dynamic_feed</span>
       </a>
-      <a href="#contact" class="navigation-icon" id="contact_icon" title="Proyectos" data-mdb-toggle="tooltip"
+      <a href="#contact" class="navigation-icon" id="contact_icon" title="Contacto" data-mdb-toggle="tooltip"
         data-mdb-container=".navigation-bar" aria-label="contact">
         <span class="material-icons">mail</span>
       </a>
@@ -502,12 +502,81 @@
         </div>
       </div>
     </section>
+    
+    <section id="contact" class="py-5 my-5" aria-label="contact">
+      <div class="container d-flex py-5">
+        <form class="my-auto">
+          <div class="row g-3 offset-md-1 offset-lg-2 col-lg-9 col-xl-8">
+            <div class="col-8">
+              <h1 class="pt-2">Contacto</h1>
+            </div>
+            <div class="col-4 text-end">
+              <button class="mdc-button mdc-button--touch">
+                <span class="mdc-button__ripple"></span>
+                <span class="mdc-button__touch"></span>
+                <span class="mdc-button__label">Enviar</span>
+              </button>
+            </div>
+            <div class="col-12"></div>
+            <div class="col-12 col-sm-6">
+              <label class="w-100 mdc-text-field mdc-text-field--outlined" data-mdc-auto-init="MDCTextField">
+                <span class="mdc-notched-outline">
+                  <span class="mdc-notched-outline__leading"></span>
+                  <span class="mdc-notched-outline__notch">
+                    <span class="mdc-floating-label" id="my-label-id">Nombre</span>
+                  </span>
+                  <span class="mdc-notched-outline__trailing"></span>
+                </span>
+                <input type="text" class="mdc-text-field__input" aria-labelledby="my-label-id" required>
+              </label>
+            </div>
+            <div class="col-12 col-sm-6">
+              <label class="w-100 mdc-text-field mdc-text-field--outlined" data-mdc-auto-init="MDCTextField">
+                <span class="mdc-notched-outline">
+                  <span class="mdc-notched-outline__leading"></span>
+                  <span class="mdc-notched-outline__notch">
+                    <span class="mdc-floating-label" id="my-label-id">Email</span>
+                  </span>
+                  <span class="mdc-notched-outline__trailing"></span>
+                </span>
+                <input type="email" class="mdc-text-field__input" aria-labelledby="my-label-id" required>
+              </label>
+            </div>
+            <div class="col-12">
+              <label class="w-100 mdc-text-field mdc-text-field--outlined" data-mdc-auto-init="MDCTextField">
+                <span class="mdc-notched-outline">
+                  <span class="mdc-notched-outline__leading"></span>
+                  <span class="mdc-notched-outline__notch">
+                    <span class="mdc-floating-label" id="my-label-id">Asunto</span>
+                  </span>
+                  <span class="mdc-notched-outline__trailing"></span>
+                </span>
+                <input type="text" class="mdc-text-field__input" aria-labelledby="my-label-id">
+              </label>
+            </div>
+            <div class="col-12">
+              <label class="w-100 mdc-text-field mdc-text-field--outlined mdc-text-field--textarea mdc-text-field--no-label" data-mdc-auto-init="MDCTextField">
+                <span class="mdc-notched-outline">
+                  <span class="mdc-notched-outline__leading"></span>
+                  <span class="mdc-notched-outline__notch">
+                    <span class="mdc-floating-label" id="my-label-id2">Mensaje</span>
+                  </span>
+                  <span class="mdc-notched-outline__trailing"></span>
+                </span>
+                <textarea class="mdc-text-field__input" rows="6" maxlength="500" oninput="this.style.height = ''; this.style.height = this.scrollHeight +'px'" aria-label="Label" required></textarea>
+              </label>
+            </div>
+          </div>
+        </form>
+      </form>
+    </section>
   </main>
 
   <script type="text/javascript" src="script/mdb.min.js"></script>
   <script type="text/javascript" src="script/active_section.js"></script>
   <script src="script/material-components-web.js"></script>
   <script>
+    mdc.autoInit();
     const chipset = new mdc.chips.MDCChipSet(document.querySelector('.mdc-chip-set'));
     console.log(chipset);
     let lastChip;
