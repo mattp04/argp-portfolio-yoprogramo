@@ -28,7 +28,6 @@ section {
 
 @media (min-height: 1300px) {
   section {
-    background-color: red;
     min-height: 1300px;
   }
 }
