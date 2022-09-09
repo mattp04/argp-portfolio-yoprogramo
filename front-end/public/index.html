@@ -578,7 +578,6 @@
   <script>
     mdc.autoInit();
     const chipset = new mdc.chips.MDCChipSet(document.querySelector('.mdc-chip-set'));
-    console.log(chipset);
     let lastChip;
     chipset.listen("MDCChip:interaction", (evt) => {
       lastChip = chipset.chipsList.find((c) => c.root.id === evt.detail.chipId);
