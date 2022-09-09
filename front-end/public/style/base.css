@@ -1,0 +1,66 @@
+@font-face {
+  font-family: 'Cabin';
+  src: url(font/Cabin-VariableFont.ttf);
+}
+
+body {
+  background-color: var(--mdc-theme-background);
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Cabin';
+  font-weight: bold;
+}
+
+p {
+  font-family: 'Cabin';
+  font-weight: normal;
+  color: var(--mdc-theme-text-primary-on-dark);
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+@media (min-height: 1300px) {
+  section {
+    min-height: 1300px;
+  }
+}
+
+/* MDB customization */
+.card {
+  background-color: var(--mdc-theme-surface);
+  color: var(--mdc-theme-on-surface);
+}
+
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--mdc-background);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+::-webkit-scrollbar-button {
+  height: 0px;
+}

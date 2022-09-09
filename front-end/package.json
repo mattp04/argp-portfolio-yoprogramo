@@ -1,0 +1,23 @@
+{
+  "name": "mi-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass:dev": "sass --no-source-map --watch --update --load-path=node_modules scss:public/style",
+    "sass:compile": "sass --no-source-map --style compressed --load-path=node_modules scss:public/style"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@material/button": "^14.0.0",
+    "@material/chips": "^14.0.0",
+    "@material/ripple": "^14.0.0",
+    "@material/textfield": "^14.0.0",
+    "@material/theme": "^14.0.0"
+  },
+  "devDependencies": {
+    "sass": "^1.54.4"
+  }
+}

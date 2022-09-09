@@ -1,0 +1,40 @@
+#projects {
+  background-color: #386667;
+  scroll-margin-top: 0;
+  background: url("../../img/david-van-dijk-3LTht2nxd34-unsplash.jpg") no-repeat fixed 50% 0/cover;
+}
+
+.project-card {
+  margin: 2em 0;
+  overflow: hidden;
+}
+
+.project-card__banner {
+  height: 250px;
+  overflow: hidden;
+}
+
+.project-card__banner img {
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
+}
+
+
+.project-card__body {
+  padding: 16px 16px;
+  padding-bottom: 0;
+}
+
+.project-card__body p {
+  padding: 0;
+}
+
+.project-card__button-container {
+  padding: 8px 16px;
+  display: flex;
+}
+
+.project-card__button-container .mdc-button {
+  margin-right: 8px;
+}

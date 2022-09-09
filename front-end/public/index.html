@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="es-ar">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>Profile</title>
+  <!-- MDB -->
+  <link rel="stylesheet" href="style/mdb.dark.min.css" />
+  <!-- Material Design Components -->
+  <link rel="stylesheet" href="style/material-design.min.css">
+  <!-- Material Design Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <link rel="stylesheet" href="style/base.css" />
+  <link rel="stylesheet" href="style/navigation.css" />
+  <link rel="stylesheet" href="style/section/profile.css">
+  <link rel="stylesheet" href="style/section/skills.css">
+  <link rel="stylesheet" href="style/section/degrees.css">
+  <link rel="stylesheet" href="style/section/projects.css">
+</head>
+
+<body class="">
+  <nav class="navigation-bar pt-md-5">
+    <div class="navigation-bar--icon-container d-flex flex-md-column justify-content-evenly">
+      <a href="#profile" class="navigation-icon active" id="profile_icon" title="Perfil" data-mdb-toggle="tooltip"
+        data-mdb-container=".navigation-bar" aria-label="profile">
+        <span class="material-icons">account_circle</span>
+      </a>
+      <a href="#skills" class="navigation-icon" id="skills_icon" title="Habilidades" data-mdb-toggle="tooltip"
+        data-mdb-container=".navigation-bar" data-mdb-placement="auto" aria-label="skills">
+        <span class="material-icons">extension</span>
+      </a>
+      <a href="#studies" class="navigation-icon" id="studies_icon" title="Titulos" data-mdb-toggle="tooltip"
+        data-mdb-container=".navigation-bar" data-mdb-placement="auto" aria-label="degrees">
+        <span class="material-icons">school</span>
+      </a>
+      <a href="#projects" class="navigation-icon" id="projects_icon" title="Proyectos" data-mdb-toggle="tooltip"
+        data-mdb-container=".navigation-bar" aria-label="projects">
+        <span class="material-icons">dynamic_feed</span>
+      </a>
+      <a href="#contact" class="navigation-icon" id="contact_icon" title="Contacto" data-mdb-toggle="tooltip"
+        data-mdb-container=".navigation-bar" aria-label="contact">
+        <span class="material-icons">mail</span>
+      </a>
+    </div>
+  </nav>
+
+  <main class="container">
+    <div class="offset-md-1 offset-lg-2 col-lg-9 col-xl-8">
+      <section id="profile" class="py-5 mb-10" aria-label="profile">
+        <div class="card rounded-8 my-auto">
+          <div class="profile-banner overflow-hidden">
+            <img src="img/adam-neumann-C2q-06fEsBo-unsplash.jpg" alt="">
+          </div>
+          <div class="profile-img-container position-relative">
+            <div class="profile-img rounded-circle shadow-3-strong overflow-hidden">
+              <img src="img/adam-neumann-C2q-06fEsBo-unsplash.jpg" alt="">
+            </div>
+          </div>
+          <div class="profile-body p-4">
+            <h1>Matias Pavón</h1>
+            <p>Desarrollador web Fullstack y Mobile Trainee<br>
+              Apasionado por la programación, capacidad de aprendizaje rapido y con gran interes en la
+              comunicación/conexión
+              entre dispositivos a través de sockets (TCP/IP)</p>
+            <hr>
+            <div class="personal-info row gy-4">
+              <div class="col col-12 col-md col-lg-4">
+                <div class="d-flex flex-column justify-content-evenly ms-3">
+
+                  <div class="label">
+                    <div class="label-icon">
+                      <svg viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                          d="M7 11H9V13H7V11M21 5V19C21 20.11 20.11 21 19 21H5C3.89 21 3 20.1 3 19V5C3 3.9 3.9 3 5 3H6V1H8V3H16V1H18V3H19C20.11 3 21 3.9 21 5M5 7H19V5H5V7M19 19V9H5V19H19M15 13V11H17V13H15M11 13V11H13V13H11M7 15H9V17H7V15M15 17V15H17V17H15M11 17V15H13V17H11Z" />
+                      </svg>
+                    </div>
+                    <div class="label-body">
+                      <p class="key">Fecha de nacimiento</p>
+                      <h5 class="value">2 de Abril de 2002</h4>
+                    </div>
+                  </div>
+                  <div class="label">
+                    <div class="label-icon">
+                      <svg viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                          d="M4,17V9H2V7H6V17H4M22,15C22,16.11 21.1,17 20,17H16V15H20V13H18V11H20V9H16V7H20A2,2 0 0,1 22,9V10.5A1.5,1.5 0 0,1 20.5,12A1.5,1.5 0 0,1 22,13.5V15M14,15V17H8V13C8,11.89 8.9,11 10,11H12V9H8V7H12A2,2 0 0,1 14,9V11C14,12.11 13.1,13 12,13H10V15H14Z" />
+                      </svg>
+                    </div>
+                    <div class="label-body">
+                      <p class="key">Edad</p>
+                      <h5 class="value">20</h4>
+                    </div>
+                  </div>
+                  <div class="label">
+                    <div class="label-icon">
+                      <svg viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                          d="M17.9,17.39C17.64,16.59 16.89,16 16,16H15V13A1,1 0 0,0 14,12H8V10H10A1,1 0 0,0 11,9V7H13A2,2 0 0,0 15,5V4.59C17.93,5.77 20,8.64 20,12C20,14.08 19.2,15.97 17.9,17.39M11,19.93C7.05,19.44 4,16.08 4,12C4,11.38 4.08,10.78 4.21,10.21L9,15V16A2,2 0 0,0 11,18M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" />
+                      </svg>
+                    </div>
+                    <div class="label-body">
+                      <p class="key">Nacionalidad</p>
+                      <h5 class="value">Argentina</h4>
+                    </div>
+                  </div>
+                  <div class="label">
+                    <div class="label-icon">
+                      <svg viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                          d="M20,6C20.58,6 21.05,6.2 21.42,6.59C21.8,7 22,7.45 22,8V19C22,19.55 21.8,20 21.42,20.41C21.05,20.8 20.58,21 20,21H4C3.42,21 2.95,20.8 2.58,20.41C2.2,20 2,19.55 2,19V8C2,7.45 2.2,7 2.58,6.59C2.95,6.2 3.42,6 4,6H8V4C8,3.42 8.2,2.95 8.58,2.58C8.95,2.2 9.42,2 10,2H14C14.58,2 15.05,2.2 15.42,2.58C15.8,2.95 16,3.42 16,4V6H20M4,8V19H20V8H4M14,6V4H10V6H14Z" />
+                      </svg>
+                    </div>
+                    <div class="label-body">
+                      <p class="key">Ocupación</p>
+                      <h5 class="value">Estudiante</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="about-me col">
+                <h2>Sobre mi</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu molestie ipsum. Cras pretium laoreet
+                  ipsum, at
+                  eleifend ligula ultrices viverra. Ut dictum mollis molestie. Praesent urna nisi, pretium sed velit et,
+                  maximus cursus
+                  lacus. Curabitur non ante in enim suscipit consectetur. Aliquam sit amet nisi pharetra, vulputate ipsum
+                  eget, pretium
+                  eros. Cras ornare erat sit amet lacus malesuada asdsadd
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="py-5 mb-10" aria-label="profile">
+        <div class="card rounded-8 p-4 my-auto">
+          <h1>Habilidades</h1>
+          <div class="mdc-chip-set mdc-chip-set--choice mt-2" role="grid">
+            <div class="mdc-chip mdc-chip--selected" role="row" id="skill-chip-todo">
+              <div class="mdc-chip__ripple"></div>
+              <span role="gridcell">
+                <span class="mdc-chip__primary-action" role="radio" tabindex="0" aria-checked="true"></span>
+                <span class="mdc-chip__text">Todo</span>
+              </span>
+            </div>
+            <div class="mdc-chip" role="row" id="skill-chip-backend">
+              <div class="mdc-chip__ripple"></div>
+              <span role="gridcell">
+                <span class="mdc-chip__primary-action" role="radio" tabindex="0" aria-checked="true"></span>
+                <span class="mdc-chip__text">Frontend</span>
+              </span>
+            </div>
+            <div class="mdc-chip" role="row" id="skill-chip-frontend">
+              <div class="mdc-chip__ripple"></div>
+              <span role="gridcell">
+                <span class="mdc-chip__primary-action" role="radio" tabindex="0" aria-checked="true"></span>
+                <span class="mdc-chip__text">Backend</span>
+              </span>
+            </div>
+            <div class="mdc-chip" role="row" id="skill-chip-extra">
+              <div class="mdc-chip__ripple"></div>
+              <span role="gridcell">
+                <span class="mdc-chip__primary-action" role="radio" tabindex="0" aria-checked="true"></span>
+                <span class="mdc-chip__text">Extras</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="skill-container d-flex justify-content-around flex-wrap my-5 mx-sm-5">
+            <div class="skill-item">
+              <div class="img-container rounded-circle" style="background: #F7DF1E;">
+                <img class="w-100 h-100" src="img/icons/javascript.svg" alt="javascript_logo">
+              </div>
+              <p class="title text-center">Javascript</p>
+            </div>
+            <div class="skill-item">
+              <div class="img-container rounded-circle">
+                <img class="w-100 h-100" src="img/icons/python.svg" alt="python_logo">
+              </div>
+              <p class="title text-center">Python</p>
+            </div>
+            <div class="skill-item">
+              <div class="img-container rounded-circle">
+                <img class="w-100 h-100" src="img/icons/java.svg" alt="java_logo">
+              </div>
+              <p class="title text-center">Java</p>
+            </div>
+            <div class="skill-item">
+              <div class="img-container rounded-circle">
+                <img class="w-100 h-100" src="img/icons/dart.svg" alt="dart_logo">
+              </div>
+              <p class="title text-center">Dart</p>
+            </div>
+            <div class="skill-item">
+              <div class="img-container rounded-circle">
+                <img class="w-100 h-100" src="img/icons/nodejs.svg" alt="nodejs_logo">
+              </div>
+              <p class="title text-center">Node JS</p>
+            </div>
+            <div class="skill-item">
+              <div class="img-container rounded-circle">
+                <img class="w-100 h-100" src="img/icons/expressjs.svg" alt="expressjs_logo">
+              </div>
+              <p class="title text-center">Express</p>
+            </div>
+            <div class="skill-item">
+              <div class="img-container rounded-circle">
+                <img class="w-100 h-100" src="img/icons/mariadb.svg" alt="mariadb_logo">
+              </div>
+              <p class="title text-center">MariaDB</p>
+            </div>
+            <div class="skill-item">
+              <div class="img-container rounded-circle">
+                <img class="w-100 h-100" src="img/icons/flutter.svg" alt="flutter_logo">
+              </div>
+              <p class="title text-center">Flutter</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="studies" class="py-5 mb-10" aria-label="studies">
+        <div class="card rounded-8 pt-4 my-auto overflow-hidden">
+          <h1 class="mb-3 px-4">Estudios</h1>
+          <div class="accordion accordion-flush" id="accordionStudies">
+            <div class="accordion-item">
+              <button class="accordion-button" type="button" data-mdb-toggle="collapse"
+                data-mdb-target="#collapseThree">
+                <div class="d-flex flex-wrap align-items-center w-100">
+                  <img class="accordion-button__logo rounded-circle me-3 d-none d-sm-block"
+                    style="width: 60px; height: 60px; background-color: white;" src="img/argentina-programa-logo.png"
+                    alt="flutter_logo">
+                  <div class="flex-fill me-2">
+                    <p class="mb-1">#YoProgramo - Primera etapa</p>
+                    <p class="text-muted mb-0">Argentina Programa - Mumuki</p>
+                  </div>
+                  <div class="align-self-start me-3">
+                    <span class="badge rounded-pill badge-success">Finalizado</span>
+                  </div>
+                </div>
+              </button>
+
+              <div id="collapseThree" class="accordion-collapse collapse show" aria-labelledby="headingThree"
+                data-mdb-parent="#accordionStudies">
+                <div class="accordion-body">
+                  <dl class="">
+                    <div class="row">
+                      <dt class="col-sm-3">Inicio</dt>
+                      <dd class="col-sm-9">Agosto 2020</dd>
+                    </div>
+                    <div class="row">
+                      <dt class="col-sm-3">Duración</dt>
+                      <dd class="col-sm-9">1 año y 4 meses</dd>
+                    </div>
+                    <div class="row">
+                      <dt class="col-sm-3">Plataforma</dt>
+                      <dd class="col-sm-9"><a href="https://mumuki.io/home/">Mumuki</a></dd>
+                    </div>
+                    <div class="row">
+                      <dt class="col-sm-3">Tecnologias</dt>
+                      <dd class="col-sm-9">
+                        <span class="badge rounded-pill badge-dark">Gobstones</span>
+                        <span class="badge rounded-pill badge-dark">Javascript</span>
+                        <span class="badge rounded-pill badge-dark">Ruby</span>
+                      </dd>
+                    </div>
+                  </dl>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad quaerat velit voluptate architecto
+                    aliquid
+                    obcaecati, debitis maiores molestias quae expedita! Dolorum ipsa hic in cupiditate doloribus at
+                    delectus
+                    possimus! Fuga?
+                    Cum, adipisci assumenda repellat amet ipsa nostrum perferendis quae placeat iste officia tenetur?
+                    Reprehenderit
+                    eum, placeat molestias voluptas accusamus perspiciatis rem unde itaque necessitatibus animi autem
+                    repudiandae?
+                    Unde, ipsum error.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse"
+                data-mdb-target="#collapseOne">
+                <div class="d-flex flex-wrap align-items-center w-100">
+                  <img class="accordion-button__logo rounded-circle me-3 d-none d-sm-block"
+                    style="width: 60px; height: 60px; background-color: white;" src="img/argentina-programa-logo.png"
+                    alt="flutter_logo">
+                  <div class="flex-grow-1 me-2">
+                    <p class="mb-1">#SeProgramar - Segunda etapa</p>
+                    <p class="text-muted mb-0">Argentina Programa - INTI</p>
+                  </div>
+                  <div class="flex-grow-2 align-self-start me-3">
+                    <span class="badge rounded-pill badge-warning">En progreso</span>
+                  </div>
+                </div>
+              </button>
+
+              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                data-mdb-parent="#accordionStudies">
+                <div class="accordion-body">
+                  <dl class="row">
+                    <dt class="col-sm-3">Inicio</dt>
+                    <dd class="col-sm-9">Marzo 2022</dd>
+                    <dt class="col-sm-3">Duración</dt>
+                    <dd class="col-sm-9">10 meses</dd>
+                    <dt class="col-sm-3">Plataforma</dt>
+                    <dd class="col-sm-9"><a href="https://mumuki.io/home/">Mumuki</a></dd>
+                    <dt class="col-sm-3">Tecnologias</dt>
+                    <dd class="col-sm-9">
+                      <span class="badge rounded-pill badge-dark">HTML</span>
+                      <span class="badge rounded-pill badge-dark">CSS</span>
+                      <span class="badge rounded-pill badge-dark">Javascript</span>
+                      <span class="badge rounded-pill badge-dark">Git</span>
+                      <span class="badge rounded-pill badge-dark">Angular</span>
+                      <span class="badge rounded-pill badge-dark">Java</span>
+                      <span class="badge rounded-pill badge-dark">Spring</span>
+                      <span class="badge rounded-pill badge-dark">JWT</span>
+                      <span class="badge rounded-pill badge-dark">Heroku</span>
+                    </dd>
+                  </dl>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad quaerat velit voluptate architecto
+                    aliquid
+                    obcaecati, debitis maiores molestias quae expedita! Dolorum ipsa hic in cupiditate doloribus at
+                    delectus
+                    possimus! Fuga?
+                    Cum, adipisci assumenda repellat amet ipsa nostrum perferendis quae placeat iste officia tenetur?
+                    Reprehenderit
+                    eum, placeat molestias voluptas accusamus perspiciatis rem unde itaque necessitatibus animi autem
+                    repudiandae?
+                    Unde, ipsum error.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse"
+                data-mdb-target="#collapseTwo">
+                <div class="d-flex flex-wrap align-items-center w-100">
+                  <img class="accordion-button__logo rounded-circle me-3 d-none d-sm-block"
+                    style="width: 60px; height: 60px; background-color: white;" src="img/acamica-logo.png"
+                    alt="flutter_logo">
+                  <div class="flex-fill me-2">
+                    <p class="mb-1">Web Backend developer</p>
+                    <p class="text-muted mb-0">Acamica</p>
+                  </div>
+                  <div class="align-self-start me-3">
+                    <span class="badge rounded-pill badge-success">Finalizado</span>
+                  </div>
+                </div>
+              </button>
+
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-mdb-parent="#accordionStudies">
+                <div class="accordion-body">
+                  <dl class="row">
+                    <dt class="col-sm-3">Inicio</dt>
+                    <dd class="col-sm-9">Marzo 2022</dd>
+                    <dt class="col-sm-3">Duración</dt>
+                    <dd class="col-sm-9">10 meses</dd>
+                    <dt class="col-sm-3">Plataforma</dt>
+                    <dd class="col-sm-9"><a href="https://mumuki.io/home/">Mumuki</a></dd>
+                    <dt class="col-sm-3">Tecnologias</dt>
+                    <dd class="col-sm-9">
+                      <span class="badge rounded-pill badge-dark">Html</span>
+                      <span class="badge rounded-pill badge-dark">CSS</span>
+                      <span class="badge rounded-pill badge-dark">Javascript</span>
+                      <span class="badge rounded-pill badge-dark">Git</span>
+                      <span class="badge rounded-pill badge-dark">Angular</span>
+                      <span class="badge rounded-pill badge-dark">Java</span>
+                      <span class="badge rounded-pill badge-dark">Spring</span>
+                      <span class="badge rounded-pill badge-dark">JWT</span>
+                      <span class="badge rounded-pill badge-dark">Heroku</span>
+                    </dd>
+                  </dl>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad quaerat velit voluptate architecto
+                    aliquid
+                    obcaecati, debitis maiores molestias quae expedita! Dolorum ipsa hic in cupiditate doloribus at
+                    delectus
+                    possimus! Fuga?
+                    Cum, adipisci assumenda repellat amet ipsa nostrum perferendis quae placeat iste officia tenetur?
+                    Reprehenderit
+                    eum, placeat molestias voluptas accusamus perspiciatis rem unde itaque necessitatibus animi autem
+                    repudiandae?
+                    Unde, ipsum error.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse"
+                data-mdb-target="#collapseFour">
+                <div class="d-flex flex-wrap align-items-center w-100">
+                  <img class="accordion-button__logo rounded-circle me-3 d-none d-sm-block"
+                    style="width: 60px; height: 60px; background-color: white;" src="img/facultad-regional-tdf-logo.jpg"
+                    alt="flutter_logo">
+                  <div class="flex-fill me-2">
+                    <p class="mb-1">Tecnico universitario en programación</p>
+                    <p class="text-muted mb-0">Facultad regional TDF</p>
+                  </div>
+                  <div class="align-self-start me-3">
+                    <span class="badge rounded-pill badge-warning">En progreso</span>
+                  </div>
+                </div>
+              </button>
+
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                data-mdb-parent="#accordionStudies">
+                <div class="accordion-body">
+                  <dl class="row">
+                    <dt class="col-sm-3">Inicio</dt>
+                    <dd class="col-sm-9">Marzo 2022</dd>
+                    <dt class="col-sm-3">Duración</dt>
+                    <dd class="col-sm-9">10 meses</dd>
+                    <dt class="col-sm-3">Plataforma</dt>
+                    <dd class="col-sm-9"><a href="https://mumuki.io/home/">Mumuki</a></dd>
+                    <dt class="col-sm-3">Tecnologias</dt>
+                    <dd class="col-sm-9">
+                      <span class="badge rounded-pill badge-dark">C++</span>
+                      <span class="badge rounded-pill badge-dark">Java</span>
+                      <span class="badge rounded-pill badge-dark">Javascript</span>
+                      <span class="badge rounded-pill badge-dark">PHP</span>
+                      <span class="badge rounded-pill badge-dark">MySQL</span>
+                      <span class="badge rounded-pill badge-dark">Python</span>
+                      <span class="badge rounded-pill badge-dark">Django</span>
+                    </dd>
+                  </dl>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad quaerat velit voluptate architecto
+                    aliquid
+                    obcaecati, debitis maiores molestias quae expedita! Dolorum ipsa hic in cupiditate doloribus at
+                    delectus
+                    possimus! Fuga?
+                    Cum, adipisci assumenda repellat amet ipsa nostrum perferendis quae placeat iste officia tenetur?
+                    Reprehenderit
+                    eum, placeat molestias voluptas accusamus perspiciatis rem unde itaque necessitatibus animi autem
+                    repudiandae?
+                    Unde, ipsum error.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <main>
+    <section id="projects" class="py-5" aria-label="profile">
+      <div class="container">
+        <div class="p-4 my-auto offset-md-1 offset-lg-2 col-lg-9 col-xl-8">
+          <h1 class="mb-3">Proyectos</h1>
+        </div>
+        <div class="d-flex flex-column my-auto offset-md-1 offset-lg-2 col-lg-9 col-xl-8">
+          <div class="card project-card">
+            <div class="project-card__banner">
+              <img src="taskApp_overview.png" alt="">
+            </div>
+            <div class="project-card__body">
+              <h2>Mi Portafolio</h2>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod, cupiditate tempore in placeat laborum
+                rerum optio. Distinctio, quod, quae cupiditate modi similique omnis at ipsam eius nesciunt dicta minus
+                sequi!</p>
+            </div>
+            <div class="project-card__button-container">
+              <button class="mdc-button mdc-button--touch">
+                <span class="mdc-button__ripple"></span>
+                <span class="mdc-button__touch"></span>
+                <span class="mdc-button__label">Mas info</span>
+              </button>
+              <a class="mdc-button mdc-button--touch" href="https://github.com/mattp04/argp-portfolio-yoprogramo" target="_blank">
+                <span class="mdc-button__ripple"></span>
+                <span class="mdc-button__touch"></span>
+                <span class="mdc-button__label mdc-theme--primary">Codigo fuente</span>
+                <i class="material-icons mdc-button__icon text-light" aria-hidden="true">open_in_new</i>
+              </a>
+            </div>
+          </div>
+          <div class="card project-card">
+            <div class="project-card__banner">
+              <img src="taskApp_overview.png" alt="">
+            </div>
+            <div class="project-card__body">
+              <h2>Lista de tareas</h2>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod, cupiditate tempore in placeat laborum
+                rerum optio. Distinctio, quod, quae cupiditate modi similique omnis at ipsam eius nesciunt dicta minus
+                sequi!</p>
+            </div>
+            <div class="project-card__button-container">
+              <button class="mdc-button mdc-button--touch">
+                <span class="mdc-button__ripple"></span>
+                <span class="mdc-button__touch"></span>
+                <span class="mdc-button__label">Mas info</span>
+              </button>
+              <a class="mdc-button mdc-button--touch mdc" href="https://www.github.com" target="_blank">
+                <span class="mdc-button__ripple"></span>
+                <span class="mdc-button__touch"></span>
+                <span class="mdc-button__label mdc-theme--primary">Codigo fuente</span>
+                <i class="material-icons mdc-button__icon text-light" aria-hidden="true">open_in_new</i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="contact" class="py-5 my-5" aria-label="contact">
+      <div class="container d-flex py-5">
+        <form class="my-auto">
+          <div class="row g-3 offset-md-1 offset-lg-2 col-lg-9 col-xl-8">
+            <div class="col-8">
+              <h1 class="pt-2">Contacto</h1>
+            </div>
+            <div class="col-4 text-end">
+              <button class="mdc-button mdc-button--touch">
+                <span class="mdc-button__ripple"></span>
+                <span class="mdc-button__touch"></span>
+                <span class="mdc-button__label">Enviar</span>
+              </button>
+            </div>
+            <div class="col-12"></div>
+            <div class="col-12 col-sm-6">
+              <label class="w-100 mdc-text-field mdc-text-field--outlined" data-mdc-auto-init="MDCTextField">
+                <span class="mdc-notched-outline">
+                  <span class="mdc-notched-outline__leading"></span>
+                  <span class="mdc-notched-outline__notch">
+                    <span class="mdc-floating-label" id="my-label-id">Nombre</span>
+                  </span>
+                  <span class="mdc-notched-outline__trailing"></span>
+                </span>
+                <input type="text" class="mdc-text-field__input" aria-labelledby="my-label-id" required>
+              </label>
+            </div>
+            <div class="col-12 col-sm-6">
+              <label class="w-100 mdc-text-field mdc-text-field--outlined" data-mdc-auto-init="MDCTextField">
+                <span class="mdc-notched-outline">
+                  <span class="mdc-notched-outline__leading"></span>
+                  <span class="mdc-notched-outline__notch">
+                    <span class="mdc-floating-label" id="my-label-id">Email</span>
+                  </span>
+                  <span class="mdc-notched-outline__trailing"></span>
+                </span>
+                <input type="email" class="mdc-text-field__input" aria-labelledby="my-label-id" required>
+              </label>
+            </div>
+            <div class="col-12">
+              <label class="w-100 mdc-text-field mdc-text-field--outlined" data-mdc-auto-init="MDCTextField">
+                <span class="mdc-notched-outline">
+                  <span class="mdc-notched-outline__leading"></span>
+                  <span class="mdc-notched-outline__notch">
+                    <span class="mdc-floating-label" id="my-label-id">Asunto</span>
+                  </span>
+                  <span class="mdc-notched-outline__trailing"></span>
+                </span>
+                <input type="text" class="mdc-text-field__input" aria-labelledby="my-label-id">
+              </label>
+            </div>
+            <div class="col-12">
+              <label class="w-100 mdc-text-field mdc-text-field--outlined mdc-text-field--textarea mdc-text-field--no-label" data-mdc-auto-init="MDCTextField">
+                <span class="mdc-notched-outline">
+                  <span class="mdc-notched-outline__leading"></span>
+                  <span class="mdc-notched-outline__notch">
+                    <span class="mdc-floating-label" id="my-label-id2">Mensaje</span>
+                  </span>
+                  <span class="mdc-notched-outline__trailing"></span>
+                </span>
+                <textarea class="mdc-text-field__input" rows="6" maxlength="500" oninput="this.style.height = ''; this.style.height = this.scrollHeight +'px'" aria-label="Label" required></textarea>
+              </label>
+            </div>
+          </div>
+        </form>
+      </form>
+    </section>
+  </main>
+
+  <script type="text/javascript" src="script/mdb.min.js"></script>
+  <script type="text/javascript" src="script/active_section.js"></script>
+  <script src="script/material-components-web.js"></script>
+  <script>
+    mdc.autoInit();
+    const chipset = new mdc.chips.MDCChipSet(document.querySelector('.mdc-chip-set'));
+    let lastChip;
+    chipset.listen("MDCChip:interaction", (evt) => {
+      lastChip = chipset.chipsList.find((c) => c.root.id === evt.detail.chipId);
+      if (chipset.selectedChipIds.length == 0) {
+        let firstChip = chipset.chipsList[0];
+        chipset.foundation.select(firstChip.root.id);
+      }
+    })
+  </script>
+</body>
+
+</html>
